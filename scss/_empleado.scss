@@ -1,0 +1,28 @@
+@mixin sizes ($width,$height) {
+  width:$width;
+  height: $height;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.emple {
+  @include sizes(600px,800px)
+  
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ordenar-cards {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #634803;
+}
+.card {
+  margin-left: 10px;
+  background-color: #634803;
+}

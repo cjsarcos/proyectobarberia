@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>barberia</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header class="contenido-encabezado">
@@ -38,14 +40,20 @@
     </p>
 
     <div class="contenedor">
-      
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+
       <img
         src="../multimedia/0800aea7-f93a-4689-906c-d6789cec7444.jpeg"
-        alt=""
+        alt="" class="emple"
       />
-
-      <img src="../multimedia/_ (6).jpeg" alt="">
-      
+    </div>
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000">
+      <img src="../multimedia/_ (6).jpeg" alt="" class="emple">
+    </div>
     </div>
   </main>
 
@@ -62,5 +70,8 @@
       -2024 CarlosBarbero Todos los derechos Reservados
     </div>
   </footer>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

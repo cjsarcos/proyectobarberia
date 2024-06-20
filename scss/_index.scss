@@ -1,0 +1,50 @@
+
+@mixin sizes ($width,$height) {
+  width:$width;
+  height: $height;
+}
+.imagen {
+  @include sizes(200px, 200px)
+  }
+ 
+  .contenido-encabezado {
+    background-color: #634804;
+  }
+  
+  .encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .boton-externo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    border: 5px solid white;
+    background-color: #ffffff;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .boton-externo:hover {
+    background-color: #ca9a15;
+    transform: scale(1.05);
+}
+
+  .boton-interno {
+    text-decoration: none;
+    color: black;
+  }
+
+  .barber {
+    @include sizes(600px,500px);
+   
+    padding-right: 90px;
+  }
+  

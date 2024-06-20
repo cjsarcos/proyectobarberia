@@ -1,0 +1,16 @@
+
+  /* ZONA RESPONSIVE*/
+  
+  @media (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+    }
+  
+    .encabezado {
+      flex-direction: column;
+    }
+  
+    .boton-externo {
+      margin-top: 10px;
+    }
+  }
