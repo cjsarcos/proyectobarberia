@@ -9,6 +9,7 @@ $botones: (
 
 @mixin boton-estilos($num) {
   $texto: map-get($botones, $num);
+
   .boton-#{$num} {
     content: "#{$texto}";
     background-color: lighten(#e2bf5d, $num * 5%);
@@ -20,6 +21,7 @@ $botones: (
     margin: 5px;
     cursor: pointer;
     text-transform: uppercase;
+
     &:hover {
       background-color: darken(#dba634, $num * 5%);
     }

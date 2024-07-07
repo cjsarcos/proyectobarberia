@@ -1,7 +1,6 @@
 $color-primario: white;
 $color-naranja: #ca9a15;
-$background-animado: url("../multimedia/giphy\ \(1\).webp") no-repeat center
-  center/cover;
+$background-animado: url("../multimedia/giphy\ \(1\).webp") no-repeat center center/cover;
 
 @mixin sizes($width, $height) {
   width: $width;
@@ -48,14 +47,15 @@ $background-animado: url("../multimedia/giphy\ \(1\).webp") no-repeat center
 }
 
 .fondoss {
-  padding-top: 20px;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-image: url("../multimedia/fondoss.jpg");
   display: flex;
   justify-content: center;
-  background-image: url("../multimedia/fondoss.jpg");
-  @include sizes(100%, 400px);
   background-size: cover;
   background-position: center;
   text-align: center;
+  margin-top: 30px;
 
   .carl-bar {
     @include sizes(700px, 360px);
@@ -74,9 +74,9 @@ $background-animado: url("../multimedia/giphy\ \(1\).webp") no-repeat center
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
-      font-size: 30px;
+      font-size: 25px;
       font-family: "Anton SC", sans-serif;
-      text-shadow: 3px 3px 0.5px #6b520b63;
+      text-shadow: 4px 4px 0.5px #ffffff;
     }
 
     .espacio-reserva {
@@ -103,9 +103,11 @@ $background-animado: url("../multimedia/giphy\ \(1\).webp") no-repeat center
 
 .venta {
   padding-top: 20px;
-  @include sizes(100%, 500px);
+  @include sizes(100%, 100%);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
 
   .productos {
     background-color: $color-primario;
@@ -125,5 +127,5 @@ $background-animado: url("../multimedia/giphy\ \(1\).webp") no-repeat center
 
 .barber {
   @include sizes(600px, 500px);
-  padding-right: 90px;
+
 }
